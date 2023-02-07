@@ -1,0 +1,102 @@
+JavaScript Fundamentals
+
+Variables
+-you can use 'let keyword;' to declare a variable
+  ex: let message;
+      message = 'Hello'; // store the string "Hello" in message
+-const creates a constant variable (unlike let)
+  ex: const myBirthday = '18.04.1982';
+     *This is a constant variable and cannot be changed
+
+Math
+-to round a number to a fixed number of decimal places
+  use toFixed(). Ex:
+     const lotsOfDecimal = 1.76658495
+     const twoDecimalPlaces = lotsOfDecimal.toFixed(2);
+     twoDecimalPlaces;
+     
+Increment/Decrement
+   num1++
+   num1--
+   
+   * you have to assign a variable befoe doiong this
+     eg: num1 = 4
+         num2 = 7
+               **now you can increment/decrement
+         num1++; // equals 5
+         num2--; // equals 6
+     
+Operands
+   x += 5 // shortcut for x = x +5
+   ^same goes for -=, *=, /=
+ 
+Escaping characters in strings
+   ex: 
+     const bigMouth = 'I\'ve got you babe'; // returns as "I've got you babe"
+     
+Concatenating Strings
+  backticks (``) allow you to create a teplate literal which can include variables (wrapped inside ${}) 
+    ex:
+       const name = "Chris";
+       const greeting = 'hello, ${name};
+       console.log(greeting); // "Hello, Chris"
+       
+   You can use the same technique to join together two variables:
+     ex:
+       const one = "Hello, ";
+       const two = "how are you?";
+       const joined = `${one}${two}`;
+       console.log(joined); // "Hello, how are you?"
+       
+ 
+Conditional Statements
+
+In JavaScript we have the following conditional statements:
+
+    Use if to specify a block of code to be executed, if a specified condition is true
+    Use else to specify a block of code to be executed, if the same condition is false
+    Use else if to specify a new condition to test, if the first condition is false
+    Use switch to specify many alternative blocks of code to be executed
+
+
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+
+   
+   
+   

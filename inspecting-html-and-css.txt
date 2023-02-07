@@ -1,0 +1,3 @@
+
+CTRL + Shift + C = Open DevTools
+

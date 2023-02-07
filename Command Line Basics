@@ -1,0 +1,114 @@
+Command Line Basics
+**Describe what the command line is
+**Open the command line on your computer
+**Use the command line to navigate directories and display contents
+**Use the command line to create a new directory and new file
+**Use the command line to rename or destroy a directory and a file
+**Use the command line to open a file or folder in a program
+
+CTRL + ALT + T - opens the Terminal
+$ whoami - shows username
+$ touch - creates a new file
+    ex: touch index.html script.js style.css
+$ pwd - present working directory. Shows path of current directory
+$ pwd -P - shows physical path with all symlinks resolved
+
+List Files & Directories (ls)
+$ ls - lists files and directories in pwd
+$ ls /usr/local/ - you can see what is in another directory without leaving
+    your current directory
+$ ls - a - shows all files, including hidden files (.file or .folder)
+$ ls -l - shows long-form version of files/folders w more details
+$ ls -lh - shows human readable sizes for files/folders (-h)
+$ ls -lhs - sorts files/folders by size, from largest to smallest (-s)
+$ ls -lt - sorts files/folders by last modified time (-t)
+$ ls -ltr - reverses the sort (-r)
+
+Links (ln)
+$ ln a.txt b.txt - makes a hard copy of file a (file b) which will 
+    automatically update as a is edited/saved
+    You can only create a hard link within the same directory
+$ ln a.txt b.txt -f - (-f) forces a link when source file already exists
+$ln -s a.txt b.txt - creates a symbolic link for file or folder. 
+    Symbolic links can be used for linking to other directories
+
+Change Directories (cd)
+$ cd ~/Documents - changes the directory to a new folder
+$ cd .. - move back up a directory
+$ cd - move back to the home directory
+
+Creating Directory (mkdir)
+$ mkdir foo - creates a new folder/directory called 'foo'
+$ mkdir -p a/b/c - creates nested (intermediate) directories a/b/c
+
+Remove/Delete Directory (rmdir)
+$ rmdir test - deletes a directory named "test"
+
+Verbose Output (-v)
+$ mkdir -v a - console will give status updates when u do something
+     (eg: mkdir: created directory 'a')
+     
+Copying Files (cp)k
+$ cp a.txt b.txt - makes a copy of file a (does not update automatically
+      like a link) 
+      If a folder/directory is used for target then original file name
+      will be used in target folder/directory
+$ cp a.txt b.txt foo - copies multiple files (directory must be target)
+$ cp *.txt foo - copies all .txt files and creates them in foo directoy
+$ -v - verbose output can verify what you are doing 
+     (eg: cp -v a.txt b.txt
+        verbose output:  a.txt -> b.txt)
+
+Copying Directories (-R)
+$ cp -R foo bar - allows you to copy a directory (not allowed by default)
+
+Force Overwriting of a file (-f)
+$ cp a.txt b.txt - may not work if files already exist
+$ cp -f a.txt b.txt - forces the overwiting of existing files
+
+Confirm Overwriting of a file (-i)
+$ cp -i a.txt b.txt - a prompt asking if you want to override will show
+
+Deleting files (rm)
+$ rm -v a.txt - (rm) deletes files or folders
+
+Moving Files (mv)
+$ mv -v a.txt b.txt - moves files or folders
+
+
+
+Input/Output (|,>)
+$ ls -a ~ | grep _  - this uses the "pipe" operator "|" to list all
+    files that contain an underscore "_".
+    The output of the ls command is "piped" to the grep command
+
+Writing to a File (>)
+$ls -a ~ | grep _ > underscores.txt  - this lists all files (ls)
+    then finds all with underscores (grep _) then writes that ouput 
+    (the list of files) to a document called underscores.txt
+
+Reading from a File (<)
+  not sure how this is supposed to work
+  However...
+$ cat test.txt - will ouput the contents of test.txt in terminal
+
+
+Copying & Pasting in Linux
+   CTRL + SHIFT + C = copy
+   CTRL + SHIFT + V = paste
+   
+Tab Completion
+    TAB completes partially typed stuff
+    ex: cd Dow + TAB fills in "Downloads" to change to that directory
+    
+Open everything in a project directory with .
+    ex: cd into project directory then type "code ." 
+     -this will open all project files in VSCode
+ 
+Open files or folders in VSCode
+    ex: "code my_awesome_project/ or code style.css"
+    
+xdg-open filename.txt = opens a txt file 
+
+
+

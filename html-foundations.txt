@@ -1,0 +1,4 @@
+Typing "!" then enter within VSCode will populate a boilerplate html template
+firefox <path to file> = will open html document
+CTRL + R = refresh firefox page
+

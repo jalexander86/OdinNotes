@@ -1,0 +1,17 @@
+Introduction to Git
+
+git clone git@github.com:USER-NAME/REPOSITORY-NAME.git = clone repository
+git status = shows status of document
+git add = adds document to queue
+git -m commit = commit file to repository
+git commit -m "Blah blah blah" = commits with comment
+git log = view commit history
+git push = pushes all committed files to repository (will show on github.com)
+
+code . = opens all files in repository in Visual Studio Code
+CTRL + S = Saves a file
+
+
+Best Practice:
+-atomic commits = only commit changes that are related to a specific feature
+

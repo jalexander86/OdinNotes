@@ -1,0 +1,15 @@
+
+Center a DIV only using Flex:
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+  
+Good bits to know:
+
+justify-content: space-between;
+
+***pick up with 04-flex-information***
